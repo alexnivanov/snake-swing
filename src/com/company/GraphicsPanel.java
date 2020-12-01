@@ -5,8 +5,8 @@ import java.awt.*;
 
 public class GraphicsPanel extends JPanel {
 
-    static final int FIELD_PARTS_NUM = 25;
-    static final int OFFSET = 10;
+    public static final int FIELD_PARTS_NUM = 25;
+    public static final int OFFSET = 10;
 
     private final Snake snake;
 
