@@ -12,6 +12,7 @@ public class Snake {
 
     private final List<SnakePart> parts = new ArrayList<>();
     private boolean crashed = false;
+    private SnakeDirection direction = SnakeDirection.RIGHT;
 
     public Snake() {
         for (int i = 0; i < INIT_SIZE; ++i) {
@@ -70,4 +71,8 @@ class SnakePart {
         this.x = x;
         this.y = y;
     }
+}
+
+enum SnakeDirection {
+    LEFT, RIGHT, UP, DOWN;
 }
